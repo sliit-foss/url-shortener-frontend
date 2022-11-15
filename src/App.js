@@ -15,7 +15,6 @@ function App() {
           exact
           component={isLoggedIn ? ProfileLayout : LoginLayout}
         />
-        {/* <Route path="/profile" exact component={ProfileLayout} /> */}
       </Switch>
     </Router>
   );
