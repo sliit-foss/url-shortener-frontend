@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import HomeLayout from "./layouts/HomeLayout/HomeLayout";
 import LoginLayout from "./layouts/LoginLayout/LoginLayout";
 import ProfileLayout from "./layouts/ProfileLayout/ProfileLayout";
+import ResetLayout from "./layouts/ResetLayout/ResetLayout";
 
 function App() {
   const isLoggedIn = false;
@@ -15,6 +16,7 @@ function App() {
           exact
           component={isLoggedIn ? ProfileLayout : LoginLayout}
         />
+        <Route path="/reset-password" exact component={ResetLayout} />
       </Switch>
     </Router>
   );
