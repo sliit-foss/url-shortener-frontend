@@ -12,7 +12,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={HomeLayout} />
         <Route
-          path="/login"
+          path="/auth"
           exact
           component={isLoggedIn ? ProfileLayout : AuthLayout}
         />
